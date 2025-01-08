@@ -63,9 +63,9 @@ export default function LangflowPage() {
         setLoading(true);
         setError(null);
 
-        const flowId = "7094376f-6b52-4f06-a729-7b9bad83b56c"; // Replace with your flow ID
-        const langflowId = "f790aeb0-bf0e-4c35-8609-740eddb9ab50"; // Replace with your langflow ID
-        const applicationToken = "AstraCS:FROcABizDeMJykpMzWxZMNUp:e764522b0d4914aa983043933a93478fd05706b833f8daca5bce485493b224a9"; // Replace with your token
+        const flowId = `${process.env.FLOW_ID}`; // Replace with your flow ID
+        const langflowId = `${process.env.LANGFLOW_ID}`; // Replace with your langflow ID
+        const applicationToken = `${process.env.ASTRA_TB}`; // Replace with your token
 
         const client = new LangflowClient(
             "/api",  // This now points to the local proxy
