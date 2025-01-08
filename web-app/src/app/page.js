@@ -109,7 +109,7 @@ export default function LangflowPage() {
 
     return (
         <div className="max-w-4xl mx-auto p-6">
-            <h1 className="text-3xl font-bold mb-6 text-center">Langflow Integration</h1>
+            <h1 className="text-3xl font-bold mb-6 text-center">SocialSpark</h1>
             <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
             <div className="mt-6">
     <label className="block text-lg font-semibold mb-2" htmlFor="postType">Choose Post Type</label>
